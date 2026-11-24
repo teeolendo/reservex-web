@@ -1,0 +1,58 @@
+:root {
+  --accent: #f4c25b;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #10241b;
+  font-family: var(--font-sans), Inter, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: #14543c;
+  text-decoration: none;
+}
+a:hover {
+  color: #0c3b29;
+}
+
+:focus-visible {
+  outline: 2px solid #14543c;
+  outline-offset: 3px;
+}
+/* Keep the ring visible on dark green panels. */
+.on-brand :focus-visible {
+  outline-color: #ffffff;
+}
+
+.navlink {
+  color: #3e5249;
+  font-size: 15px;
+}
+.navlink:hover {
+  color: #14543c;
+}
+
+.btn-primary:hover {
+  background: #0c3b29 !important;
+  color: #ffffff;
+}
+.btn-ghost:hover,
+.btn-light:hover {
+  background: #eef6f1 !important;
+  color: #14543c;
+}
+.btn-outline-light:hover {
+  color: #ffffff;
+}
+.card:hover {
+  border-color: #b9d6c6 !important;
+}
