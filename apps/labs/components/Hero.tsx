@@ -16,7 +16,7 @@ export function Hero() {
       className="mx-auto box-border flex max-w-container flex-wrap items-center gap-[72px] px-8 pb-[120px] pt-[112px]"
     >
       <div className="min-w-0 flex-[1_1_560px]">
-        <Pill>Token Issuance Platform Provider</Pill>
+        <Pill>Token Issuance Platform licence: application lodged</Pill>
         <h1 className="mt-7 font-display text-[clamp(52px,6.6vw,92px)] font-normal leading-[0.98] tracking-[-0.03em]">
           Tokenising African capital markets.
         </h1>
@@ -30,6 +30,11 @@ export function Hero() {
             See how we deliver
           </ButtonLink>
         </div>
+        <p className="mt-7 max-w-[580px] text-[14px] leading-[1.6] text-subtle">
+          ReserveX Labs Limited is licensed by the Capital Markets Authority only as an Intermediary Service Platform
+          Provider, for ReserveX Trader. We do not yet hold a Token Issuance Platform licence; our application is under
+          review, and we do not provide token issuance services until it is granted.
+        </p>
       </div>
 
       <div className="relative flex min-w-0 flex-[1_1_380px] justify-center">

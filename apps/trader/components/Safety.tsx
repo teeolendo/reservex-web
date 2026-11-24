@@ -6,7 +6,7 @@ const points: Array<[string, string]> = [
     'Authorised as an Intermediary Service Platform Provider by Kenya’s Capital Markets Authority.',
   ],
   ['Non-custodial, always', 'Funds settle into regulated institutional and custodian accounts, never into ours.'],
-  ['Bank-grade security', 'Multi-factor login, encrypted card data and a full audit trail behind every movement.'],
+  ['Security built in', 'Multi-factor login, encrypted card data and a full audit trail behind every movement.'],
 ];
 
 export function Safety() {
@@ -16,7 +16,7 @@ export function Safety() {
         <div className="min-w-0 flex-[1_1_420px]">
           <Eyebrow onBrand>Safety by design</Eyebrow>
           <h2 className="mt-5 font-display text-[clamp(36px,4vw,56px)] font-normal leading-[1.06] tracking-[-0.02em]">
-            We never touch your money. That’s the point.
+            We never hold your money. That’s the point.
           </h2>
           <p className="mt-7 text-[18px] leading-[1.7] text-on-brand-muted">
             ReserveX Trader is a technology platform, not a bank and not a fund. Your money goes straight to licensed

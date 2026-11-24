@@ -3,7 +3,7 @@ import { Eyebrow, Section, cn } from '@reservex/ui';
 export function Fees() {
   const rows = [
     {
-      label: 'Platform fee',
+      label: 'Platform fee (on your balance)',
       value: (
         <>
           0.25% <span className="font-sans text-[14px] text-subtle">a year</span>
@@ -23,8 +23,8 @@ export function Fees() {
             Invest $100. Your fund gets $100.
           </h2>
           <p className="mt-6 max-w-[500px] text-[18px] leading-[1.7] text-muted">
-            No hidden spreads, no exit penalties. Card processing is shown on top before you pay, so the full amount you
-            choose goes to work.
+            No exit penalties. The 0.50% contribution fee and any card processing are added on top and shown before you
+            pay, so the full amount you choose goes to work. Exchange rates are shown before you confirm.
           </p>
         </div>
         <dl className="m-0 box-border min-w-0 flex-[1_1_514px] rounded-card-lg border border-border px-6 py-3 sm:px-9">

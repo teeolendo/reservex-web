@@ -1,6 +1,7 @@
 import { Card, Eyebrow, Section } from '@reservex/ui';
 
-const team: Array<{ initials: string; name: string; role: string; bio: string }> = [
+// Clyde's bio is omitted until one is supplied.
+const team: Array<{ initials: string; name: string; role: string; bio?: string }> = [
   {
     initials: 'TO',
     name: 'Tony Olendo',
@@ -17,7 +18,6 @@ const team: Array<{ initials: string; name: string; role: string; bio: string }>
     initials: 'CM',
     name: 'Clyde Mutsotso',
     role: 'Chief Financial Officer',
-    bio: '[SHORT BIO]',
   },
 ];
 
@@ -46,7 +46,7 @@ export function Team() {
             </div>
             <h3 className="mt-6 text-[20px] font-semibold">{m.name}</h3>
             <p className="mt-1 text-[14px] font-medium text-brand">{m.role}</p>
-            <p className="mt-[14px] text-[15px] leading-[1.7] text-muted">{m.bio}</p>
+            {m.bio && <p className="mt-[14px] text-[15px] leading-[1.7] text-muted">{m.bio}</p>}
           </Card>
         ))}
       </div>

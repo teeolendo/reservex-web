@@ -37,7 +37,7 @@ const services: Array<{ title: string; body: string; icon: ReactNode }> = [
   },
   {
     title: 'Distribution & listing',
-    body: 'We act as your listing agent across licensed global venues: due diligence, disclosure, technical onboarding and launch. A new investor base, not just a new back office.',
+    body: 'Once licensed, we will act as your listing agent on licensed venues: due diligence, disclosure, technical onboarding and launch. A new investor base, not just a new back office.',
     icon: (
       <>
         <circle cx="12" cy="12" r="9" />
@@ -49,7 +49,7 @@ const services: Array<{ title: string; body: string; icon: ReactNode }> = [
   },
   {
     title: 'Liquidity & lending',
-    body: 'Market-making and lending arrangements in place so units trade at or near NAV from day one, and holders can borrow against them without redeeming.',
+    body: 'We line up licensed market makers and lenders so units can trade close to NAV and holders can borrow against them without redeeming.',
     icon: <path d="M12 3c3 4 6 7 6 11a6 6 0 01-12 0c0-4 3-7 6-11z" />,
   },
   {

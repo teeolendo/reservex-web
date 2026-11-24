@@ -4,7 +4,7 @@ import { Card, Eyebrow, IconTile, Section } from '@reservex/ui';
 const products: Array<{ title: string; body: string; icon: ReactNode }> = [
   {
     title: 'Money market funds',
-    body: 'Your cash, earning daily. Park it, sweep idle balances into it, withdraw when you need it.',
+    body: 'Daily-priced funds for your cash. Park it, sweep idle balances into it, withdraw when you need it. Returns are not guaranteed.',
     icon: (
       <>
         <circle cx="12" cy="12" r="8" />
@@ -27,7 +27,7 @@ const products: Array<{ title: string; body: string; icon: ReactNode }> = [
   },
   {
     title: 'NSE stocks, live',
-    body: 'Real-time prices and direct orders into the Nairobi Securities Exchange order book. No phone calls.',
+    body: 'Real-time prices, with orders placed on the Nairobi Securities Exchange through a licensed stockbroker. No phone calls.',
     icon: (
       <>
         <path d="M4 19h16" />
@@ -61,7 +61,7 @@ const products: Array<{ title: string; body: string; icon: ReactNode }> = [
   },
   {
     title: 'Government bonds',
-    body: 'Kenyan Treasury exposure through regulated fixed income funds. Steady income, backed by the sovereign.',
+    body: 'Kenyan Treasury exposure through regulated fixed income funds, run by licensed managers.',
     icon: (
       <>
         <path d="M6 4h9l3 3v13H6z" />

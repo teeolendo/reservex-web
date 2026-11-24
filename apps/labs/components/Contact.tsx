@@ -1,6 +1,6 @@
 import { ButtonLink, TRADER_URL } from '@reservex/ui';
 
-const CONTACT_EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL || '[CONTACT EMAIL]';
+const CONTACT_EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'info@reservexlabs.com';
 
 export function Contact() {
   return (

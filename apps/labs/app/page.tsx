@@ -61,7 +61,7 @@ export default function Page() {
             ],
           },
         ]}
-        disclosure="ReserveX Labs Limited is licensed by the Capital Markets Authority of Kenya as an Intermediary Service Platform Provider. Token issuance services are provided subject to the applicable licensing in each market. Figures marked as industry estimates are illustrative and not a forecast. Nothing on this page is an offer or solicitation to buy any security or virtual asset. © 2026 ReserveX Labs Limited."
+        disclosure="ReserveX Labs Limited is licensed by the Capital Markets Authority of Kenya as an Intermediary Service Platform Provider, for its ReserveX Trader platform only. It is not licensed as a Token Issuance Platform Provider or virtual asset service provider in Kenya or any other market. Its Token Issuance Platform application with the Capital Markets Authority is under review, and token issuance services will be provided only once the applicable licence is granted in each market. Figures marked as industry estimates are illustrative and not a forecast. Nothing on this page is an offer or solicitation to buy any security or virtual asset. © 2026 ReserveX Labs Limited."
       />
     </div>
   );
