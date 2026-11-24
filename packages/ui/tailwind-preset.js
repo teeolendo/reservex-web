@@ -18,6 +18,8 @@ module.exports = {
         border: { DEFAULT: '#E3ECE7', strong: '#CFE3D8', hover: '#B9D6C6' },
         'on-brand': { DEFAULT: '#FFFFFF', muted: '#D7E8DF', subtle: '#BFD8CC' },
         accent: 'var(--accent)',
+        // Not in the design; used only for the waitlist form's inline error state.
+        danger: '#B42318',
       },
       fontFamily: {
         display: ['var(--font-display)', 'Newsreader', 'Georgia', 'serif'],
@@ -34,7 +36,10 @@ module.exports = {
         hero: '0 30px 60px -30px rgba(16,36,27,0.25)',
       },
       maxWidth: {
-        container: '1200px',
+        // Design uses content-box: 1200px content + 2 × 32px padding.
+        container: '1264px',
+        // Border-box feature panels (Safety, Waitlist, Beyond speed, Contact).
+        panel: '1200px',
       },
       spacing: {
         section: '144px',

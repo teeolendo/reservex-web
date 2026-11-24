@@ -8,12 +8,16 @@
   }
 }
 
+/* Designs inherit the browser default, not Tailwind preflight's 1.5. */
+html body {
+  line-height: normal;
+}
+
 body {
   margin: 0;
   background: #ffffff;
   color: #10241b;
   font-family: var(--font-sans), Inter, system-ui, sans-serif;
-  -webkit-font-smoothing: antialiased;
 }
 
 a {
