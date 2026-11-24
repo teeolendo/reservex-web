@@ -49,6 +49,11 @@ For each site:
      --cache-control "public,max-age=300" --exclude "_next/static/*"
    aws s3 sync apps/trader/out/_next/static s3://<trader-bucket>/_next/static \
      --cache-control "public,max-age=31536000,immutable"
+   # Metadata images are exported without a file extension; set their type explicitly.
+   for f in opengraph-image twitter-image icon apple-icon; do
+     aws s3 cp apps/trader/out/$f s3://<trader-bucket>/$f \
+       --content-type image/png --cache-control "public,max-age=86400"
+   done
    aws cloudfront create-invalidation --distribution-id <id> --paths "/*"
    ```
    (Same for `apps/labs/out`.)
