@@ -3,7 +3,7 @@
 Hosting target: **AWS**. Both sites are fully static exports served from S3 through CloudFront. The Trader waitlist is the only dynamic piece: a small Lambda behind the same CloudFront distribution.
 
 ```
-                    ┌──────────── CloudFront: [DOMAIN] ─────────────┐
+                    ┌──────────── CloudFront: reservexlabs.com ──────┐
   browser ─────────▶│  default (*)   → S3 bucket  (apps/trader/out)  │
                     │  /api/*        → Lambda function URL (waitlist)│
                     └────────────────────────────────────────────────┘
@@ -19,9 +19,9 @@ Nothing in the code is AWS-specific except `services/waitlist/src/lambda.ts`, a 
 
 ```sh
 pnpm install --frozen-lockfile
-NEXT_PUBLIC_TRADER_URL=https://[DOMAIN] \
+NEXT_PUBLIC_TRADER_URL=https://reservexlabs.com \
 NEXT_PUBLIC_LABS_URL=https://[LABS_SUBDOMAIN] \
-NEXT_PUBLIC_CONTACT_EMAIL='[CONTACT EMAIL]' \
+NEXT_PUBLIC_CONTACT_EMAIL='info@reservexlabs.com' \
 pnpm build
 ```
 
@@ -71,7 +71,7 @@ Recommended response headers policy: HSTS, `X-Content-Type-Options: nosniff`, `R
    - Origin request policy: `AllViewerExceptHostHeader`
 
    The form posts to `/api/waitlist` on the same origin, so no CORS is needed and `NEXT_PUBLIC_WAITLIST_ENDPOINT` can stay unset.
-4. If you serve the API from a different origin instead, set `NEXT_PUBLIC_WAITLIST_ENDPOINT` at build time to its full URL, and set `WAITLIST_ALLOWED_ORIGINS=https://[DOMAIN]` on the Lambda.
+4. If you serve the API from a different origin instead, set `NEXT_PUBLIC_WAITLIST_ENDPOINT` at build time to its full URL, and set `WAITLIST_ALLOWED_ORIGINS=https://reservexlabs.com` on the Lambda.
 
 ### Rate limiting
 

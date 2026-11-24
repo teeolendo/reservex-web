@@ -3,7 +3,7 @@ import { Eyebrow } from '@reservex/ui';
 const benefits: Array<[string, string]> = [
   [
     'Redemptions become loans',
-    'Holders pledge units and borrow against them, valued at official NAV. They stay invested; you keep the assets, the client and the fee, with no balance-sheet exposure.',
+    'Holders pledge units and borrow against them through licensed lenders, valued at official NAV. They stay invested; you keep the assets, the client and the fee, with no balance-sheet exposure.',
   ],
   [
     'A global distribution channel',

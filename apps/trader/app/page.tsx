@@ -59,7 +59,7 @@ export default function Page() {
             ],
           },
         ]}
-        disclosure="ReserveX Labs Limited is licensed by the Capital Markets Authority of Kenya as an Intermediary Service Platform Provider (licence no. [LICENCE NO.]). ReserveX does not hold client funds and does not issue investment products; products are offered by their respective licensed managers and intermediaries. The value of investments can go down as well as up, and past performance is not a guide to future returns. © 2026 ReserveX Labs Limited."
+        disclosure="ReserveX Labs Limited is licensed by the Capital Markets Authority of Kenya as an Intermediary Service Platform Provider. ReserveX does not hold client funds and does not issue investment products; products are offered by their respective licensed managers and intermediaries. The value of investments can go down as well as up, and past performance is not a guide to future returns. Nothing on this site is an offer or solicitation to buy any investment product. Product availability, fees and features are subject to change before launch. © 2026 ReserveX Labs Limited."
       />
     </div>
   );

@@ -4,7 +4,7 @@ const assets: Array<[string, string]> = [
   ['Funds', 'Money market, fixed income, special and balanced funds: tokenised share classes on your existing mandate.'],
   ['Bonds', 'Sovereign and corporate debt, in local currency and Eurobond form, made fractional and transferable.'],
   ['Real assets', 'REITs, infrastructure and real estate vehicles, with ownership that moves as easily as cash.'],
-  ['Private markets', 'Private credit and alternative strategies, opened to a broader, verified investor base.'],
+  ['Private markets', 'Private credit and alternative strategies, opened to eligible, verified investors within the applicable offer rules.'],
 ];
 
 export function Assets() {

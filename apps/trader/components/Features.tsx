@@ -3,12 +3,12 @@ import { Eyebrow } from '@reservex/ui';
 const features: Array<[string, string]> = [
   ['Pay the way you pay', 'Card, bank transfer or open banking. No Kenyan bank account needed, no SWIFT forms, no queue.'],
   [
-    'Set it and forget it',
-    'Recurring contributions on your schedule. Name a goal (a home, school fees, retirement) and watch it fill up.',
+    'Invest on your schedule',
+    'Set up recurring contributions you choose and control: amount, date and products. Name a goal (a home, school fees, retirement) and track your progress.',
   ],
   ['Cash out to M-PESA', 'Withdraw straight to M-PESA or your bank. Send to family at home without moving money twice.'],
   ['See every shilling', 'Exchange rates and charges shown before you confirm. What you see is what lands in your fund.'],
-  ['Reinvest automatically', 'Dividends and distributions roll straight back in, so your returns earn returns.'],
+  ['Choose to reinvest', 'Opt in to roll dividends and distributions back into the same holding.'],
   [
     'Name a beneficiary',
     'Decide who inherits your portfolio, in the app, in minutes. Your family won’t have to untangle it later.',

@@ -33,7 +33,7 @@ export function Hero() {
       </div>
 
       {/* Static, illustrative mockup. Figures are not live data. */}
-      <div className="relative flex min-w-0 flex-[1_1_360px] justify-center">
+      <div className="relative flex min-w-0 flex-[1_1_360px] flex-col items-center">
         <div aria-hidden="true" className="absolute top-[60px] h-[420px] w-[420px] rounded-pill bg-tint" />
         <div aria-hidden="true" className="absolute right-[12%] top-5 h-[120px] w-[120px] rounded-pill bg-accent opacity-90" />
         <figure
@@ -63,13 +63,14 @@ export function Hero() {
             </div>
             <div className="flex items-center justify-between gap-3 rounded-[18px] bg-brand p-4 text-white">
               <div>
-                <div className="text-[12px] text-on-brand-subtle">Auto-invest</div>
+                <div className="text-[12px] text-on-brand-subtle">Monthly plan</div>
                 <div className="mt-[2px] whitespace-nowrap text-[15px] font-medium">$200 every month</div>
               </div>
               <span className="whitespace-nowrap rounded-pill bg-white/[0.14] px-[10px] py-[6px] text-[12px]">Visa ·· 4417</span>
             </div>
           </div>
         </figure>
+        <p className="relative mt-4 text-[13px] text-subtle">Illustrative only. Not real data.</p>
       </div>
     </section>
   );

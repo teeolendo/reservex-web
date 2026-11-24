@@ -4,7 +4,7 @@ Marketing sites for ReserveX.
 
 | Site | App | Domain | Design |
 |---|---|---|---|
-| ReserveX Trader: the front door to Kenya’s capital markets | `apps/trader` | `[DOMAIN]` | `design/trader-home.dc.html` |
+| ReserveX Trader: the front door to Kenya’s capital markets | `apps/trader` | `reservexlabs.com` | `design/trader-home.dc.html` |
 | ReserveX: tokenising African capital markets | `apps/labs` | `[LABS_SUBDOMAIN]` | `design/reservex-tokenisation.dc.html` |
 
 - Spec: [`HANDOFF.md`](./HANDOFF.md)
