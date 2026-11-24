@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      # Placeholders until domains are confirmed. NEXT_PUBLIC_* values are inlined at build time.
+      NEXT_PUBLIC_TRADER_URL: https://[DOMAIN]
+      NEXT_PUBLIC_LABS_URL: https://[LABS_SUBDOMAIN]
+      NEXT_PUBLIC_CONTACT_EMAIL: '[CONTACT EMAIL]'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm typecheck
+      - run: pnpm lint
+      - run: pnpm test
+      - run: pnpm build
+      - name: "Content rule: no crypto vocabulary on Trader (HANDOFF §6.1)"
+        run: node scripts/check-content.mjs trader
+      - name: "Content rule: no third-party company names on tokenisation site (HANDOFF §6.2)"
+        run: node scripts/check-content.mjs labs
+      - name: Copy matches the designs word for word
+        run: node scripts/check-copy.mjs
